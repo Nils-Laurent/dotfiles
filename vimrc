@@ -13,6 +13,14 @@ set expandtab
 
 " turn syntax highlighting on by default
 syntax on
+" Command `echo $TERM` should be xterm-256color ?
+" check by using `:set t_Co` in vim
+"
+" see : https://github.com/zefei/simple-dark
+colorscheme simple-dark
+
+" see : https://github.com/rainglow/vim
+" colorscheme absent-contrast
 filetype plugin indent on
 
 " set auto-indenting on for programming
@@ -29,3 +37,9 @@ set showmatch
 
 " make that backspace key work the way it should
 set backspace=indent,eol,start
+
+set number
+set hlsearch
+
+set encoding=utf-8
+set fileencoding=utf-8
