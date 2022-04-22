@@ -21,10 +21,17 @@ shopt -s histappend
 shopt -s cmdhist
 
 # Load Matthew's Git bash prompt
-# source ~/.dotfiles/bash_gitprompt
+set tmp=$LANG
+export LANG='en_US.UTF-8'
+source ~/.dotfiles/bash_gitprompt
+source ~/.dotfiles/git-completion.bash
+export LANG=$tmp
 
 # Load Brew's git bash completion
 # source /opt/boxen/homebrew/Cellar/git/1.9.1/etc/bash_completion.d/git-completion.bash
 # source /opt/boxen/homebrew/Cellar/git/1.9.1/etc/bash_completion.d/git-prompt.sh
 # PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 # GIT_PS1_SHOWDIRTYSTATE=true
+
+# Load fzf
+source /usr/share/doc/fzf/examples/key-bindings.bash
